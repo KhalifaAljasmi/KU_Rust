@@ -1,6 +1,6 @@
 DON'T EDIT THIS FILE!
 
-move_semantics5
+functions5
 
 intro1
 intro2
@@ -27,6 +27,8 @@ vecs2
 move_semantics1
 move_semantics2
 move_semantics3
+move_semantics4
+move_semantics5
 structs1
 structs2
 structs3
@@ -38,3 +40,11 @@ strings2
 strings3
 options1
 options2
+errors1
+errors2
+errors3
+errors4
+errors5
+errors6
+generics1
+generics2
