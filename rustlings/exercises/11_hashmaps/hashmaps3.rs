@@ -31,6 +31,16 @@ fn build_scores_table(results: &str) -> HashMap<&str, TeamScores> {
         // Keep in mind that goals scored by team 1 will be the number of goals
         // conceded by team 2. Similarly, goals scored by team 2 will be the
         // number of goals conceded by team 1.
+        let team_1_conced: u8 =team_2_score;
+        let team_2_conced: u8 =team_1_score;
+        // TODO: Populate the scores table with the extracted details.
+    let entry = scores.entry(team_1_name).or_insert(TeamScores { goals_scored: 0, goals_conceded: 0 });
+    entry.goals_scored += team_1_score;
+    entry.goals_conceded += team_1_conced;
+    let entry2 = scores.entry(team_2_name).or_insert(TeamScores { goals_scored: 0, goals_conceded: 0 });
+    entry2.goals_scored += team_2_score;
+    entry2.goals_conceded += team_2_conced;
+
     }
 
     scores
